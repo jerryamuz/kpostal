@@ -124,17 +124,6 @@ class _KpostalViewState extends State<KpostalView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: widget.appBar ??
-          AppBar(
-            backgroundColor: widget.appBarColor,
-            title: Text(
-              widget.title,
-              style: TextStyle(
-                color: widget.titleColor,
-              ),
-            ),
-            iconTheme: IconThemeData().copyWith(color: widget.titleColor),
-          ),
       body: Stack(
         children: [
           _buildWebView(),
